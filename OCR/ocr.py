@@ -1,11 +1,8 @@
-from PIL import Image
+import cv2 
+import pytesseract
 
-import pyTesseract
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
-import numpy as np
+img = cv2.imread('image_to_text.jpeg')
 
-filename = 'image_to_text.jpeg'
-img1 = np.array(Image.open(filename))
-text = pyTesseract.image_to_string(img1)
-
-print(text)
+# Adding custom options
+custom_config = r'--oem 3 --psm 6'
+pytesseract.image_to_string(img, config=custom_config)
