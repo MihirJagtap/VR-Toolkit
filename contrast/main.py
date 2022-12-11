@@ -16,7 +16,7 @@ def main():
     
     args = parser.parse_args()
     
-    assert args.method in ['Stretching', 'Histogram Eq', 'Adaptive Histogram Eq', 'Novel'], "Either Strecthing, Histogram, Novel"
+    assert args.method in ['Stretching', 'HistEq', 'AdaptiveHistEq', 'Novel'], "Either Strecthing, Histogram, Novel"
     
     cdf_histogram(args)
     

@@ -16,5 +16,5 @@ Comp Sci 639 Project: Virtual Reality Toolkit
 
 - `[IN_PATH]`: Path of input contrast image
 - `[OUT_PATH]`: Path of output contrast image
-- `[METHOD]`: Method used to generate this contrast - `[Stretching, Histogram Eq, Adaptive Histogram Eq, Novel]`
+- `[METHOD]`: Method used to generate this contrast - `[Stretching, HistEq, AdaptiveHistEq, Novel]`
 - `[HIST_PATH]`: Path to store the histogram
