@@ -2,6 +2,7 @@
 import cv2
 import pytesseract
 import numpy as np
+import pyttsx3
 
 def ocr(input_file, output_file):
 # Load the image using OpenCV
@@ -25,7 +26,24 @@ def ocr(input_file, output_file):
 
     # Print the recognized text
     print(text)
+    return text
 
-images = ['/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample1.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample2.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample3.png']
+def text_to_speech(text):
+    
+    convertor = pyttsx3.init()  
+    voices = convertor.getProperty('voices')
+    convertor.setProperty('voices', voices[0].id)
+    convertor.say(text)
+    convertor.runAndWait()
+
+images = ['/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample1.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample2.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample3.png',
+'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample4.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample5.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample6.png', 
+'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample7.png' #histogram/adaptive
+,'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample8.png' #output/novel
+ ,'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample9.png' # histogram/regular
+ ]
+
 for i in range(len(images)):
-    ocr(images[i], '/Users/ishaanmahajan/VR-Toolkit/OCR/ocr_output/output_' + str(i + 1) + '.txt')
+    text = ocr(images[i], '/Users/ishaanmahajan/VR-Toolkit/OCR/ocr_output/output_' + str(i + 1) + '.txt')
+    text_to_speech(text)
+
