@@ -82,9 +82,9 @@ for Disease Control and Prevention, 9 June 2020, https://www.cdc.gov/visionhealt
 
 [5] Zhao, Yuhang, et al. SEEINGVR: A Set of Tools to Make Virtual Reality More Accessible to... https://www.microsoft.com/en-us/research/uploads/prod/2019/01/SeeingVRchi2019.pdf.
 
-[6] Dingman, Hayden. “How Facebook Is Using AI to Improve Photo Descriptions for People Who Are Blind or Visually Impaired.” Tech at Meta, 2 Nov. 2021, tech.fb.com/artificialintelligence/2021/01/how-facebook-is-using-ai-to-improve-photo-descriptions-for-people-who-areblind-or-visually-impaired.
+[6] Dingman, Hayden. “How Facebook Is Using AI to Improve Photo Descriptions for People Who Are Blind or Visually Impaired.” Tech at Meta, 2 Nov. 2021, https://tech.fb.com/artificialintelligence/2021/01/how-facebook-is-using-ai-to-improve-photo-descriptions-for-people-who-areblind-or-visually-impaired.
 
-[7] Lewis, Veronica. “Choosing High Contrast Color Schemes for Low Vision.” Veroniiiica, 25 Aug. 2020, veroniiiica.com/2019/10/25/high-contrast-color-schemes-low-vision.
+[7] Lewis, Veronica. “Choosing High Contrast Color Schemes for Low Vision.” Veroniiiica, 25 Aug. 2020, https://veroniiiica.com/2019/10/25/high-contrast-color-schemes-low-vision/.
 
 [8] Robert Fisher, Simon Perkins, Ashley Walker and Erik Wolfart, 2003, https://homepages.inf.ed.ac.uk/rbf/HIPR2/histeq.htm
 
