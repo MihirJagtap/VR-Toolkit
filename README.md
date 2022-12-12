@@ -46,6 +46,8 @@ this a new direction. VRs are mainly used to provide entertainment benefits, how
 
 ### Command to run Stretching:
 
+In the `contrast` directory, run
+
 `python3 stretching.py --image_path [IMG_PATH] --input_path [BW_PATH] --output_path [OUT_PATH]`
 
 - `[IMG_PATH]`: Path of input image
@@ -54,6 +56,8 @@ this a new direction. VRs are mainly used to provide entertainment benefits, how
 
 ### Command to generate Histogram+CDF from a set of input-output images:
 
+In the `contrast` directory, run
+
 `python3 main.py --input_path [IN_PATH] --output_path [OUT_PATH] --method [METHOD] --hist_path [HIST_PATH]`
 
 - `[IN_PATH]`: Path of input contrast image
@@ -61,6 +65,9 @@ this a new direction. VRs are mainly used to provide entertainment benefits, how
 - `[METHOD]`: Method used to generate this contrast - `[Stretching, HistEq, AdaptiveHistEq, Novel]`
 - `[HIST_PATH]`: Path to store the histogram
 
+Alternatively, to generate histograms on all pairs of input and output images, in the home directory, run
+
+`./gen_hist.sh`
 
 ## References:
 

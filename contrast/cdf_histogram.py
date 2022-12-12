@@ -17,7 +17,7 @@ def cdf_histogram(args):
     ax1.plot(normcdf, color = 'blue')
     ax1.hist(img.flatten(), 256, [0, 256], color='orange')
     ax1.set_xlim([0, 256])
-    ax1.title.set_text("Histogram Before Stretching")
+    ax1.title.set_text("Histogram Before Contrasting")
     ax1.legend(('CDF', 'Histogram'))
 
     img = cv.imread(args.output_path, 0)
@@ -27,7 +27,7 @@ def cdf_histogram(args):
     ax2.plot(normcdf, color = 'blue')
     ax2.hist(img.flatten(), 256, [0, 256], color='orange')
     ax2.set_xlim([0, 256])
-    ax2.title.set_text("Histogram After Stretching")
+    ax2.title.set_text("Histogram After Contrasting")
     ax2.legend(('CDF', 'Histogram'))
     
     print("Generating and Saving Histogram...")
