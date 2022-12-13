@@ -17,12 +17,10 @@ def ocr(input_file, output_file):
     # Apply adaptive thresholding to the image
     thresh = cv2.adaptiveThreshold(blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 3, 3)
 
-
     text = pytesseract.image_to_string(thresh)
     f = open(output_file, 'a')
     f.write(text)
     f.close()
-
 
     # Print the recognized text
     print(text)
@@ -36,14 +34,14 @@ def text_to_speech(text):
     convertor.say(text)
     convertor.runAndWait()
 
-images = ['/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample1.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample2.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample3.png',
-'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample4.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample5.png', '/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample6.png', 
-'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample7.png' #histogram/adaptive
-,'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample8.png' #output/novel
- ,'/Users/ishaanmahajan/VR-Toolkit/images/ocr_images/sample9.png' # histogram/regular
+images = ['../images/ocr_images/sample1.png', '../images/ocr_images/sample2.png', '../images/ocr_images/sample3.png',
+'../images/ocr_images/sample4.png', '../images/ocr_images/sample5.png', '../images/ocr_images/sample6.png', 
+'../images/ocr_images/sample7.png' #histogram/adaptive
+,'../images/ocr_images/sample8.png' #output/novel
+ ,'../images/ocr_images/sample9.png' # histogram/regular
  ]
 
 for i in range(len(images)):
-    text = ocr(images[i], '/Users/ishaanmahajan/VR-Toolkit/OCR/ocr_output/output_' + str(i + 1) + '.txt')
+    text = ocr(images[i], 'ocr_output/output_' + str(i + 1) + '.txt')
     text_to_speech(text)
 
