@@ -44,11 +44,30 @@ this a new direction. VRs are mainly used to provide entertainment benefits, how
 
 ## Repository Code API:
 
-### Command to run Stretching:
+### Dependencies:
+
+To install dependencies for the functionality of this repository, run
+
+```
+pip install -r requirements.txt
+```
+
+To add `tesseract` to `PATH` if the previous installation throws an exception, run the following commands in the environment:
+
+```
+brew link libtiff                     
+brew link libpng
+brew link jpeg
+brew install tesseract
+```
+
+### Command to run Contrast by Stretching:
 
 In the `contrast` directory, run
 
-```python3 stretching.py --image_path [IMG_PATH] --input_path [BW_PATH] --output_path [OUT_PATH]```
+```
+python3 stretching.py --image_path [IMG_PATH] --input_path [BW_PATH] --output_path [OUT_PATH]
+```
 
 - `[IMG_PATH]`: Path of input image
 - `[BW_PATH]`: Path to store grayscale image of input generated
@@ -58,7 +77,9 @@ In the `contrast` directory, run
 
 In the `contrast` directory, run
 
-```python3 main.py --input_path [IN_PATH] --output_path [OUT_PATH] --method [METHOD] --hist_path [HIST_PATH]```
+```
+python3 main.py --input_path [IN_PATH] --output_path [OUT_PATH] --method [METHOD] --hist_path [HIST_PATH]
+```
 
 - `[IN_PATH]`: Path of input contrast image
 - `[OUT_PATH]`: Path of output contrast image
@@ -67,7 +88,9 @@ In the `contrast` directory, run
 
 Alternatively, to generate histograms on all pairs of input and output images, in the home directory, run
 
-```./gen_hist.sh```
+```
+./gen_hist.sh
+```
 
 ## References:
 
