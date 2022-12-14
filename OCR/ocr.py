@@ -28,12 +28,13 @@ def ocr(input_file, output_file):
     print(text)
     return text
 
-def text_to_speech(text):
+def text_to_speech(text,audio_file):
     
     convertor = pyttsx3.init()  
     voices = convertor.getProperty('voices')
     convertor.setProperty('voices', voices[0].id)
-    convertor.say(text)
+    convertor.save_to_file(text, audio_file)
+    #convertor.say(text)
     convertor.runAndWait()
 
 images = ['../images/ocr_images/sample1.png', '../images/ocr_images/sample2.png', '../images/ocr_images/sample3.png',
@@ -44,6 +45,6 @@ images = ['../images/ocr_images/sample1.png', '../images/ocr_images/sample2.png'
  ]
 
 for i in range(len(images)):
-    text = ocr(images[i], 'ocr_output/output_' + str(i + 1) + '.txt')
-    text_to_speech(text)
+    text = ocr(images[i], 'ocr_output/text_output/output_' + str(i + 1) + '.txt')
+    text_to_speech(text,'ocr_output/audio_output/audio_' + str(i + 1) + '.mp3')
 
