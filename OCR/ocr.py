@@ -19,6 +19,8 @@ def ocr(input_file, output_file):
 
     text = pytesseract.image_to_string(thresh)
     f = open(output_file, 'a')
+    f.seek(0)
+    f.truncate()
     f.write(text)
     f.close()
 
