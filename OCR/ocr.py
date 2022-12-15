@@ -40,7 +40,7 @@ def text_to_speech(text,audio_file):
 images = ['../images/ocr_images/sample1.png', '../images/ocr_images/sample2.png', '../images/ocr_images/sample3.png',
 '../images/ocr_images/sample4.png', '../images/ocr_images/sample5.png', '../images/ocr_images/sample6.png', 
 '../images/ocr_images/sample7.png' #histogram/adaptive
-,'../images/ocr_images/sample8.png' #output/novel
+,'../images/contrast_examples/output/novel/text_output.png' #output/novel
  ,'../images/ocr_images/sample9.png' # histogram/regular
  ]
 
