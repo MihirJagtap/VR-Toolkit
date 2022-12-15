@@ -1,6 +1,4 @@
-# VR-Toolkit
-
-Comp Sci 639 Final Project: Virtual Reality Toolkit
+# Virtual Reality Toolkit
 
 ## Abstract:
 
@@ -16,6 +14,7 @@ or special glasses to help people suffering from these kind of problems. With th
 Virtual Reality and the advances being made towards the Metaverse, we hope our work will
 help people with low vision see better and provide them with a more inclusive tech-space in
 the future.
+
 
 ## Approach:
 
@@ -41,6 +40,8 @@ better rate.
 
 We plan to work on existing approaches in the sense of making the use of VR, but we plan on giving
 this a new direction. VRs are mainly used to provide entertainment benefits, however, we will be using it to help people.
+
+![Contrasting Techniques](images/contrast_histograms/histogram/adaptive/reindeer.png "Reindeer Histogram")
 
 ## Repository Code API:
 
